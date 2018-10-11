@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../components/bootsrap/bootstrap.min.css'
+import '../components/bootsrap/bootstrap.min.css'
 class App extends React.Component{
     constructor(props) {
         super(props)
@@ -19,6 +19,12 @@ class App extends React.Component{
                     <hr />
                 </div>
                 <div className="row">
+                    <div className="col-lg-11"></div>
+                    <div className="col-lg-1">
+                    <button className="btn-lg btn-outline-success" onClick={()=>{window.location.replace('/login')}}>Login</button>
+                    </div>
+                </div>
+                <div className="row mt-lg1">
                     {this.state.allhostels.map((list,index)=>{return(
                         <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div className="jumbotron" style={{backgroundColor:'rebeccapurple',color:'white'}}>

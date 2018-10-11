@@ -84,7 +84,7 @@ class App extends React.Component{
                     </tr>
                     </tbody>
                 </table>
-                <input type="button" className="btn-lg btn-info" onClick={()=>{let win = window.open('/view_hostels', '_blank');
+                <input type="button" className="btn-lg btn-info" onClick={()=>{let win = window.open('/', '_blank');
                     win.focus();}} value="View Hostels"/>
             </div>
         )
